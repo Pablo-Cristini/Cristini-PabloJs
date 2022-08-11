@@ -1,0 +1,16 @@
+const productos = [
+    {id:1, title: "Hamburguesa Simple", precio: 700, img:"./imagenes/hsimple.webp"},
+    {id:2, title: "Hamburguesa Doble", precio: 900, img:"./imagenes/hdoble.jpg"},
+    {id:3, title: "Hamburguesa Veggie", precio: 750, img:"./imagenes/hveggie.webp"},
+    {id:4, title: "Papas Fritas", precio: 400, img:"../imagenes/papasfritas.png"},
+    {id:5, title: "Batatas Fritas", precio: 400, img:"../imagenes/batata.jpg"},
+    {id:6, title: "Aros de Cebolla", precio: 350, img:"../imagenes/aros.jpg"},
+    {id:7, title: "Cheddar", precio: 150, img:"../imagenes/cheddar.jpg"},
+    {id:8, title: "Tomate", precio: 150, img:"../imagenes/tomate.jpg"},
+    {id:9, title: "Panceta", precio: 150, img:"../imagenes/panceta.webp"},
+    {id:10, title: "Coca Cola", precio: 200, img:"../imagenes/cocacola.jfif"},
+    {id:11, title: "Agua", precio: 150, img:"../imagenes/agua.jpg"},
+    {id:12, title: "Cerveza", precio: 300, img:"../imagenes/cerveza.jpg"},
+    {id:13, title: "Helado", precio: 400, img:"../imagenes/helado.webp"},
+    {id:14, title: "Cafe", precio: 400, img:"../imagenes/cafe.jpg"},
+];
