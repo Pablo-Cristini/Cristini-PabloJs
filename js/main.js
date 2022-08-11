@@ -6,7 +6,6 @@ productos.forEach((producto) => {
     const idButton = `add-cart${producto.id}` 
     document.getElementById("seccion-card").innerHTML += `<div class="card d-flex col-4">
         <div class="precio">$${producto.precio}</div>
-        <img src="${producto.img}">
         <h4>${producto.title}</h4>
         <button class="boton"><i class="fas fa-shopping-cart"><a id="${idButton}" data-id="${producto.id}">Añadir Al Carrito</a></button>  
     </div>`;
