@@ -1,6 +1,19 @@
 const elementosCarrito = JSON.parse(localStorage.getItem("carrito"));
 let carrito = [];
 let total = 0;
+let ofertas = 0;
+
+const callApi = () => {
+    fetch('http://worldtimeapi.org/api/timezone/America/Argentina/Buenos_Aires')
+    .then(Response => Response.json())
+    .then(info => { console.log(info.day_of_week)
+    let oferta = info.day_of_week;
+    if (oferta == 2) {
+    ofertas = 100;
+    }  
+    })
+}
+callApi()
 
 productos.forEach((producto) => {
     const idButton = `add-cart${producto.id}` 
@@ -19,7 +32,7 @@ productos.forEach((producto) => {
         const indiceProducto = productos.findIndex(producto => producto.id == idProducto);
         const producto = productos[indiceProducto];
         carrito.push(producto);
-        const total = carrito.reduce((acumulador, producto) => acumulador + producto.precio, 0);
+        const total = carrito.reduce((acumulador, producto) => acumulador + producto.precio, 0) - ofertas;
         document.getElementById("cart-total").innerHTML = `${carrito.length}  $${total}`;
         localStorage.setItem("carrito", JSON.stringify(carrito));
         Toastify({
