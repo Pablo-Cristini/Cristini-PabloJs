@@ -23,13 +23,16 @@
                             Pedido
                             <span class="badge bg-dark text-white ms-1 rounded-pill" id="cart-total">0</span>
                     </form>
+                    <div>
+                        <button class="btn btn-danger btn-m" id="vaciar-carrito">Vaciar carrito</button>
+                    </div>
                 </div>
             </div>
         </nav>
         <header class="bg-dark py-5">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">Hace tu pedido</h1>
+                    <h1 class="display-4 fw-bolder" id="textoOferta"></h1>
                 </div>
             </div>
         </header>
@@ -37,13 +40,18 @@
             <div class="container px-4 px-lg-5 mt-5 style=width: 2rem;">
                 <div id="seccion-card" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"></div>
             </div>
+            <div class="container px-4 px-lg-5 mt-5 style=width: 2rem;">
+                <div id="coleccion" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"></div>
+            </div>
+            <div>
+                <h3>TU CARRITO:</h3>
+            </div>
+            <div id="pro" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"></div>
+            
         </section>
-        <div>
-            <button class="btn btn-danger btn-m" id="vaciar-carrito">Vaciar carrito</button>
-        </div>
         <div id="carritoContenedor"></div>
         <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
+            <div class="container"><p class="m-0 text-center text-white">Cristini Pablo</p></div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
